@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+ТВОЁ АНИМЕ ГОВНО?
+{% endblock %}
+
+{% block content %}
+<div>
+    <figcaption style="color: darkslateblue; font-size: 26px; margin-top: -8.3%;
+        font-family: 'Rawline Black'; font-style: normal; font-weight: 900; letter-spacing: 1em;
+        text-transform: uppercase; text-align: center; !important">
+    ТВОЁ АНИМЕ ГОВНО?
+    </figcaption>
+</div>
+    <div class="um um-anime um-sizeanime uimob500" style="opacity: 1;">
+        <br>
+        <br>
+        <br>
+        <br>Вбей ниже название своего любимого тайтла и узнай правду
+        <br>
+        <input type="text" id="questionBox" size="50" value="">
+        <br>
+        <br>
+            <input type="button" alt="УЗНАТЬ ПРАВДУ" value="УЗНАТЬ ПРАВДУ" id="magicBallButton" onclick="GenerateAnswer()" ;="">
+        <style>.um-sizeanime.um {max-width: 450px;}</style>
+    </div>
+{% endblock %}

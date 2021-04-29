@@ -1,0 +1,68 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block content %}
+    <div class="entry-content clearfix">
+        <div class="um um-login um-sizelogin uimob500" style="opacity: 1;">
+            <div class="um-form">
+                <form method="post" action="" autocomplete="off">
+                    <div class="um-row _um_row_1 " style="margin: 0 0 30px 0;">
+                        <div class="um-col-1">
+                            <div id="um_field_612_username" class="um-field um-field-text  um-field-username um-field-text um-field-type_text" data-key="username">
+                                <div class="um-field-label">
+                                    <div class="um-field-label-icon">
+                                        <i aria-label="Никнейм или почта"></i>
+                                    </div>
+                                    <label for="UserName">Почта</label>
+                                    <div class="um-clear"></div>
+                                </div>
+                                <div class="um-field-area">
+                                    <input autocomplete="off" class="um-form-field valid "
+                                           type="text" name="UserName" id="UserName" value="" placeholder=""
+                                           data-validate="unique_username_or_email" data-key="username">
+                                </div>
+                            </div>
+
+                            <div id="um_field_612_user_password"
+                                 class="um-field um-field-password  um-field-user_password um-field-password um-field-type_password"
+                                 data-key="user_password">
+                                <div class="um-field-label">
+                                    <div class="um-field-label-icon">
+                                        <i aria-label="Пароль"></i>
+                                    </div>
+
+                                    <label for="UserPassword">Пароль</label>
+                                    <div class="um-clear"></div>
+                                </div>
+                                <div class="um-field-area">
+                                    <input class="um-form-field valid " type="password" name="UserPassword" id="UserPassword">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="um-clear"></div>
+
+                        <div class="um-right um-half">
+                            <a href="" class="um-button um-alt"> Вход </a>
+                        </div>
+
+                        <div class="um-left um-half">
+                            <a href="register" class="um-button um-alt"> Регистрация </a>
+                        </div>
+                        <div class="um-clear"></div>
+                    </div>
+                    <div class="um-col-alt-b">
+                        <a href="" class="um-link-alt"> Forgot your password? </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <style>.um-sizelogin.um {max-width: 420px;}</style>
+    </div>
+{% endblock %}

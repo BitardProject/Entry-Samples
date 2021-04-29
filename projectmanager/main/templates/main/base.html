@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+    <script
+            src="https://shady.moe/wp-includes/js/wp-emoji-release.min.js?ver=5.5.3" type="text/javascript" defer="">
+    </script>
+    <style type="text/css">img.wp-smiley,
+    img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+    }
+    </style>
+
+    <link rel="stylesheet" id="wp-color-picker-css" href="https://shady.moe/wp-admin/css/color-picker.min.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-block-library-css" href="https://shady.moe/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="edsanimate-animo-css-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_b1f6e18313d5d60bf9b3140153513bdb.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="cpsh-shortcodes-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_eeb616c7d096549b9792359164dafe24.css?ver=1.0.1" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-style-css" href="https://shady.moe/wp-content/plugins/custom-category-listing-page/assets/front-end/css/font-awesome.min.css?ver=1" type="text/css" media="all">
+    <link rel="stylesheet" id="troo-pro-style-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_fc3f74b9fced0faa84d3ed7f52a445f1.css?ver=1.5" type="text/css" media="all">
+    <link rel="stylesheet" id="patreon-wordpress-css-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_7e31e43336709d8a25740c4820d53377.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="spacexchimp_p008-font-awesome-css-frontend-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_269550530cc127b6aa5a35925a7de6ce.css?ver=4.40" type="text/css" media="screen">
+    <link rel="stylesheet" id="spacexchimp_p008-frontend-css-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_0f38b5e9393c2965b364a200c24ac32b.css?ver=4.40" type="text/css" media="all">
+
+    <style id="spacexchimp_p008-frontend-css-inline-css" type="text/css">#ssttbutton {
+                        font-size: 15px;
+                    }
+                    .ssttbutton-background {
+                        color: #0a0a0a;
+                    }
+                    .ssttbutton-symbol {
+                        color: #009dff;
+                    }
+    </style>
+    <link rel="stylesheet" id="wpsm_team_b-font-awesome-front-css" href="https://shady.moe/wp-content/plugins/team-builder/assets/css/font-awesome/css/font-awesome.min.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="wpsm_team_b_bootstrap-front-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_b275469a643a7395e98e866c8e991acd.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="wpsm_team_b_team-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_b3a1ccfc6c5563713275c9b8d78e0cb0.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-ulike-css" href="https://shady.moe/wp-content/plugins/wp-ulike/assets/css/wp-ulike.min.css?ver=4.4.0" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-ulike-custom-css" href="https://shady.moe/wp-content/uploads/wp-ulike/custom.css?ver=4.4.0" type="text/css" media="all">
+    <link rel="stylesheet" id="poseidon-stylesheet-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_531c084dd3726664803e73e339674c6c.css?ver=3" type="text/css" media="all">
+    <style
+            id="poseidon-stylesheet-inline-css" type="text/css">.site-title, .site-description, .type-post .entry-footer .entry-tags { position: absolute; clip: rect(1px, 1px, 1px, 1px); width: 1px; height: 1px; overflow: hidden; }
+    </style>
+    <link rel="stylesheet" id="genericons-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_ad2744c2cec1da79171b1833333e4b20.css?ver=3.4.1" type="text/css" media="all">
+    <link rel="stylesheet" id="poseidon-default-fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A400%2C400italic%2C700%2C700italic%7CRaleway%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+    <link rel="stylesheet" id="tf-compiled-options-mobmenu-css" href="https://shady.moe/wp-content/uploads/dynamic-mobmenu.css?ver=2.8.1.4-103" type="text/css" media="all">
+    <link rel="stylesheet" id="tf-google-webfont-dosis-css" href="//fonts.googleapis.com/css?family=Dosis%3Ainherit%2C400&amp;subset=latin%2Clatin-ext&amp;ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="tf-google-webfont-open-sans-css" href="//fonts.googleapis.com/css?family=Open+Sans%3Ainherit%2C400&amp;subset=latin%2Clatin-ext&amp;ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-official-css" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" type="text/css" media="all" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" id="all-in-one-video-gallery-backward-compatibility-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_fe25b90c7f323e30b0cb15ffdad8224e.css?ver=2.4.2" type="text/css" media="all">
+    <link rel="stylesheet" id="all-in-one-video-gallery-public-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_db15fddf402f67744e8d5a06daf425a8.css?ver=2.4.2" type="text/css" media="all">
+    <link rel="stylesheet" id="cssmobmenu-icons-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_25e7f3831dd06a1cd6d8607384db5f8f.css?ver=5.5.3" type="text/css" media="all">
+    <link rel="stylesheet" id="cssmobmenu-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_709af85dc0af69edc2ac2594d05e1046.css?ver=2.8.1.4" type="text/css" media="all">
+    <link rel="stylesheet" id="um_fonticons_ii-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_28d4882ebc1dba4a8328d08dc5200daf.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_fonticons_fa-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_48ff9d03ab2419b1057dd3e29067436e.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="select2-css" href="https://shady.moe/wp-content/plugins/ultimate-member/assets/css/select2/select2.min.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_crop-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_59336521688d38bb8f1c5501c73ce211.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_modal-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_16a0a3ad09659fdcaa31be2bafd99926.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_styles-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_17ba4cc9589357cefdf7257239c66b87.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_profile-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_0a983b624bfda8b665df3e14822ad263.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_account-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_5a695e54b73588847beb574ff8b9717f.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_misc-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_c77ae194cd5b025baa7c6fd1a24137d6.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_fileupload-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_abc4e3c2f8c1400e944853a6f14b048a.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_datetime-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_afcb16d3ae878da9961ca53164e1f2aa.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_datetime_date-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_fb1e35155d11a8c40e32f8be9351ee53.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_datetime_time-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_a995f682910b091a3966acfb5857c52e.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_raty-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_d5d624b2b2d2d19b8d2a7dc1328b7d05.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_scrollbar-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_e0681482aaf0007fd323a9da1ce7f675.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_tipsy-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_6fea8331ec95a566deb3fd8f2e5642e9.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_responsive-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_9898b4fbe7dab96d336d3ed7f6a91dea.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="um_default_css-css" href="https://shady.moe/wp-content/cache/autoptimize/css/autoptimize_single_56f902a1b9086d69f7dbfe86f7a16e2d.css?ver=2.1.11" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-official-v4shim-css" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css" type="text/css" media="all" integrity="sha384-C8a18+Gvny8XkjAdfto/vjAUdpGuPtl1Ix/K2BgKhFaVO6w4onVVHiEaN9h9XsvX" crossorigin="anonymous">
+
+    <script
+            type="text/javascript" id="jquery-core-js-extra">/* <![CDATA[ */
+            var SDT_DATA = {"ajaxurl":"https:\/\/shady.moe\/wp-admin\/admin-ajax.php","siteUrl":"https:\/\/shady.moe\/","pluginsUrl":"https:\/\/shady.moe\/wp-content\/plugins","isAdmin":""};
+    </script>
+
+    <script
+            type="text/javascript" src="https://shady.moe/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" id="jquery-core-js">
+
+    </script>
+
+    <script
+            type="text/javascript" src="https://shady.moe/wp-content/cache/autoptimize/js/autoptimize_single_f55726289e08732a934c3d9c2d41bae5.js?ver=5.5.3" id="excanvas-js">
+    </script>
+
+    <script
+            type="text/javascript" src="https://shady.moe/wp-content/plugins/redcountdown/jquery.redcountdown/3rdparty/jquery.ba-throttle-debounce.min.js?ver=5.5.3" id="jquery-ba-throttle-debounce-js">
+    </script>
+
+    <script
+            type="text/javascript" src="https://shady.moe/wp-content/plugins/redcountdown/jquery.redcountdown/3rdparty/jquery.knob.min.js?ver=5.5.3" id="jquery-knob-js">
+    </script>
+
+    <script
+            type="text/javascript" src="https://shady.moe/wp-content/plugins/redcountdown/jquery.redcountdown/js/jquery.redcountdown.no-presets.min.js?ver=5.5.3" id="jquery-redcountdown-js">
+    </script>
+
+    <script
+            type="text/javascript" id="dtgs_nonce_frontend-js-after">
+        var DTGS_NONCE_FRONTEND = "c45b7fe351"
+    </script> <!--[if lt IE 9]>
+
+    <script
+            type='text/javascript' src='https://shady.moe/wp-content/themes/poseidon/js/html5shiv.min.js?ver=3.7.3' id='html5shiv-js'>
+    </script> <![endif]-->
+
+    <script
+            type="text/javascript" src="https://shady.moe/wp-content/cache/autoptimize/js/autoptimize_single_1de4add20c25416536e969d8a241997c.js?ver=20170127" id="poseidon-jquery-navigation-js">
+    </script>
+
+    <script
+            type="text/javascript" src="https://shady.moe/wp-content/cache/autoptimize/js/autoptimize_single_96b5f05d57f346062e2a30a544f94d54.js?ver=20170203" id="poseidon-jquery-sticky-header-js">
+    </script>
+
+<!--    <script-->
+<!--            type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-166965696-1" id="google_gtagjs-js" async="">-->
+<!--    </script>-->
+
+<!--    <script type="text/javascript" id="google_gtagjs-js-after">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}-->
+<!--            gtag("js", new Date());-->
+<!--            gtag("set", "developer_id.dZTNiMT", true);-->
+<!--            gtag("config", "UA-166965696-1", {"anonymize_ip":true});-->
+<!--    </script>-->
+
+<!--    <script-->
+<!--            type="text/javascript" src="https://shady.moe/wp-content/cache/autoptimize/js/autoptimize_single_40a14a377a5056875921a38afb441642.js?ver=2.8.1.4" id="mobmenujs-js">-->
+<!--    </script>-->
+
+<!--    <script-->
+<!--            type="text/javascript" src="https://shady.moe/wp-content/plugins/ultimate-member/assets/js/um-gdpr.min.js?ver=2.1.11" id="um-gdpr-js">-->
+<!--    </script>-->
+
+<!--    <link rel="https://api.w.org/" href="https://shady.moe/wp-json/">-->
+<!--    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shady.moe/xmlrpc.php?rsd">-->
+<!--    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://shady.moe/wp-includes/wlwmanifest.xml">-->
+<!--    <meta name="generator" content="WordPress 5.5.3">-->
+
+    <style type="text/css">@font-face { font-family:Rawline;src:url(https://shady.moe/rawline/rawline-400.woff2) format('woff2'),
+                                        url(https://shady.moe/rawline/rawline-400.woff) format('woff'), url(https://shady.moe/rawline/rawline-400.ttf)
+                                        format('truetype'), url(https://shady.moe/rawline/rawline-400.svg#rawline) format('svg');font-display: auto;}
+                                        @font-face { font-family:Rawline Black;src:url(https://shady.moe/rawline/rawline-900.woff2) format('woff2'),
+                                        url(https://shady.moe/rawline/rawline-900.woff) format('woff'), url(https://shady.moe/rawline/rawline-900.ttf)
+                                        format('truetype'), url(https://shady.moe/rawline/rawline-900.svg#rawline_black) format('svg');font-display: auto;}
+    </style>
+
+    <meta name="generator" content="Site Kit by Google 1.28.0">
+
+    <style
+            id="iris-css">.iris-picker{display:block;position:relative}.iris-picker,.iris-picker *{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input+.iris-picker{margin-top:4px}.iris-error{background-color:#ffafaf}.iris-border{border-radius:3px;border:1px solid #aaa;width:200px;background-color:#fff}.iris-picker-inner{position:absolute;top:0;right:0;left:0;bottom:0}.iris-border .iris-picker-inner{top:10px;right:10px;left:10px;bottom:10px}.iris-picker .iris-square-inner{position:absolute;left:0;right:0;top:0;bottom:0}.iris-picker .iris-square,.iris-picker .iris-slider,.iris-picker .iris-square-inner,.iris-picker .iris-palette{border-radius:3px;box-shadow:inset 0 0 5px rgba(0,0,0,.4);height:100%;width:12.5%;float:left;margin-right:5%}.iris-only-strip .iris-slider{width:100%}.iris-picker .iris-square{width:76%;margin-right:10%;position:relative}.iris-only-strip .iris-square{display:none}.iris-picker .iris-square-inner{width:auto;margin:0}.iris-ie-9 .iris-square,.iris-ie-9 .iris-slider,.iris-ie-9 .iris-square-inner,.iris-ie-9 .iris-palette{box-shadow:none;border-radius:0}.iris-ie-9 .iris-square,.iris-ie-9 .iris-slider,.iris-ie-9 .iris-palette{outline:1px solid rgba(0,0,0,.1)}.iris-ie-lt9 .iris-square,.iris-ie-lt9 .iris-slider,.iris-ie-lt9 .iris-square-inner,.iris-ie-lt9 .iris-palette{outline:1px solid #aaa}.iris-ie-lt9 .iris-square .ui-slider-handle{outline:1px solid #aaa;background-color:#fff;-ms-filter:"alpha(Opacity=30)"}.iris-ie-lt9 .iris-square .iris-square-handle{background:0 0;border:3px solid #fff;-ms-filter:"alpha(Opacity=50)"}.iris-picker .iris-strip{margin-right:0;position:relative}.iris-picker .iris-strip .ui-slider-handle{position:absolute;background:0 0;margin:0;right:-3px;left:-3px;border:4px solid #aaa;border-width:4px 3px;width:auto;height:6px;border-radius:4px;box-shadow:0 1px 2px rgba(0,0,0,.2);opacity:.9;z-index:5;cursor:ns-resize}.iris-strip-horiz .iris-strip .ui-slider-handle{right:auto;left:auto;bottom:-3px;top:-3px;height:auto;width:6px;cursor:ew-resize}.iris-strip .ui-slider-handle:before{content:" ";position:absolute;left:-2px;right:-2px;top:-3px;bottom:-3px;border:2px solid #fff;border-radius:3px}.iris-picker .iris-slider-offset{position:absolute;top:11px;left:0;right:0;bottom:-3px;width:auto;height:auto;background:transparent;border:0;border-radius:0}.iris-strip-horiz .iris-slider-offset{top:0;bottom:0;right:11px;left:-3px}.iris-picker .iris-square-handle{background:transparent;border:5px solid #aaa;border-radius:50%;border-color:rgba(128,128,128,.5);box-shadow:none;width:12px;height:12px;position:absolute;left:-10px;top:-10px;cursor:move;opacity:1;z-index:10}.iris-picker .ui-state-focus .iris-square-handle{opacity:.8}.iris-picker .iris-square-handle:hover{border-color:#999}.iris-picker .iris-square-value:focus .iris-square-handle{box-shadow:0 0 2px rgba(0,0,0,.75);opacity:.8}.iris-picker .iris-square-handle:hover::after{border-color:#fff}.iris-picker .iris-square-handle::after{position:absolute;bottom:-4px;right:-4px;left:-4px;top:-4px;border:3px solid #f9f9f9;border-color:rgba(255,255,255,.8);border-radius:50%;content:" "}.iris-picker .iris-square-value{width:8px;height:8px;position:absolute}.iris-ie-lt9 .iris-square-value,.iris-mozilla .iris-square-value{width:1px;height:1px}.iris-palette-container{position:absolute;bottom:0;left:0;margin:0;padding:0}.iris-border .iris-palette-container{left:10px;bottom:10px}.iris-picker .iris-palette{margin:0;cursor:pointer}.iris-square-handle,.ui-slider-handle{border:0;outline:0}
+    </style>
+    </head>
+
+    <body data-rsssl="1" class="error404 wp-custom-logo no-sidebar mob-menu-slideout-over sticky-header" style="padding-top: 47px;">
+    <div id="page" class="hfeed site">
+        <a class="skip-link screen-reader-text" href="titrs">Skip this shit</a>
+        <header id="masthead" class="site-header clearfix" role="banner">
+            <div class="header-main container clearfix"><div id="logo" class="site-branding clearfix">
+
+            <a href="{% url 'home' %}" class="custom-logo-link" rel="titrs" aria-current="page">
+                <img width="316" height="37" src="https://cdn.discordapp.com/attachments/827862369240743966/833772864330006548/eed96758945b521a.png">
+            </a>
+
+
+            </div><!-- .site-branding -->
+                <button
+                        id="main-navigation-toggle" class="main-navigation-toggle">
+                </button>
+
+                <nav id="main-navigation" class="primary-navigation navigation clearfix" role="navigation">
+                    <ul id="menu-main_menu" class="main-navigation-menu">
+                        <li id="menu-item-2055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055">
+                            <a href="{% url 'about' %}">О нас</a>
+                        </li>
+                        <li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-52"
+                            aria-haspopup="true"
+                            aria-expanded="true">
+                            <span class="submenu-dropdown-toggle"></span>
+                            <a href="Denis"><i class="fab fa-Денис"></i> Денис</a><ul class="sub-menu" style="visibility: hidden;">
+                            <li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51">
+                                <a href="portfolio">Портфолио</a>
+                            </li><li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98">
+                            <a href="paper">Статьи</a>
+                        </li>
+                            <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57">
+                                <a href="https://instagram.com/daril__fox?igshid=1vhv2syxj4k2l">Мой инстаграмм</a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22"
+                            aria-haspopup="true" aria-expanded="true">
+                            <span class="submenu-dropdown-toggle"></span>
+                            <a href="Maxim"><i class="fab fa-Максим">
+                            </i> Максим</a><ul class="sub-menu" style="visibility: hidden;">
+                            <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17">
+                                <a href="portfolio">Портфолио</a>
+                            </li>
+                            <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70">
+                                <a href="paper">Статьи</a>
+                            </li>
+                            <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                <a href="https://www.twitch.tv/">Мои Стримы</a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li id="menu-item-694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-694"
+                            aria-haspopup="true" aria-expanded="true">
+                            <span class="submenu-dropdown-toggle"></span>
+                            <a href="UnderTea"><i class="fas fa-poo">
+                            </i> Сергей</a>
+                            <ul class="sub-menu" style="visibility: hidden;">
+                                <li id="menu-item-1945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1945">
+                                    <a href="portfolio">Портфолио</a>
+                                </li>
+                                <li id="menu-item-1948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1948">
+                                    <a href="paper">Статьи</a>
+                                </li>
+                                <li id="menu-item-722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-722">
+                                    <a href="GameLibrary">Game Library</a>
+                                </li>
+                                <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706">
+                                    <a href="anime-is-shit">Твоё аниме – говно?!</a>
+                                </li>
+                                <li id="menu-item-1841" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1841">
+                                    <a href="word">Счётчик воды в дипломе</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58">
+                            <a href="Donate">
+                                <img draggable="false" role="img" class="emoji" alt="❤️"
+                                     src="https://s.w.org/images/core/emoji/13.0.0/svg/2764.svg"> Поддержать</a>
+                        </li>
+                        <li id="menu-item-2166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2166">
+                            <a href="login">
+                                <i class="fas fa-user-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> <!-- #main-navigation -->
+            </div><!-- .header-main -->
+        </header><!-- #masthead -->
+
+
+        <div id="headimg" class="header-image featured-image-header">
+            <figure class="wp-caption featured">
+                <img width="1920" height="307" src="https://cdn.discordapp.com/attachments/827862369240743966/833780819893944410/229327ed60319096.jpg">
+            </figure>
+        </div>
+
+
+<!--        <div id="content" class="site-content container clearfix"> <script data-ad-client="ca-pub-5248714897796646" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<!--            <section id="primary" class="content-area">-->
+<!--                <main id="main" class="site-main" role="main">-->
+<!--                    <div class="error-404 not-found type-page">-->
+<!--                        <header class="entry-header">-->
+<!--                            <h1 class="page-title">404: NOT FOUND.</h1>-->
+<!--                        </header>&lt;!&ndash; .entry-header &ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="entry-content clearfix">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <p>Ты куда-то не туда попал, петушок.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                </main>&lt;!&ndash; #main &ndash;&gt;-->
+<!--            </section>&lt;!&ndash; #primary &ndash;&gt;-->
+<div id="um_upload_single" style="display:none"></div>
+<div id="um_view_photo" style="display:none">
+
+	<a href="javascript:void(0);" data-action="um_remove_modal" class="um-modal-close" aria-label="Close view photo modal">
+		<i class="um-faicon-times"></i>
+	</a>
+
+	<div class="um-modal-body photo">
+		<div class="um-modal-photo"></div>
+	</div>
+
+</div>
+
+
+<!--    сюда скрипты-->
+
+
+
+	</div></div></body></html>
+
+
+        {% block content %}{% endblock %}
+
+
+</body>
+</html>

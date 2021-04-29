@@ -1,0 +1,114 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+
+{% block content %}
+<div>
+    <figcaption style="color: darkslateblue; font-size: 26px; margin-top: -8.3%;
+        font-family: 'Rawline Black'; font-style: normal; font-weight: 900; letter-spacing: 1em;
+        text-transform: uppercase; text-align: center; !important">
+    РЕГИСТРАЦИЯ
+    </figcaption>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="um um-register um-sizeregister uimob500" style="opacity: 1;">
+
+<!--    тута никнейм-->
+    <div class="um-field-label">
+        <div>
+            <i aria-label="NIckName"></i>
+        </div>
+        <label>NIckName</label>
+        <div class="um-clear"></div>
+    </div>
+
+    <div class="um-field-area">
+        <input autocomplete="off" class="um-form-field valid "
+               type="text" name="user_login" id="user_login-611" value="" placeholder=""
+               data-validate="unique_username" data-key="user_login">
+    </div>
+
+<!--    тута почта-->
+    <div id="um_field_611_user_email" class="um-field um-field-text  um-field-user_email um-field-text um-field-type_text"
+         data-key="user_email">
+        <div class="um-field-label">
+            <div>
+                <i aria-label="e-mail"></i>
+            </div>
+            <label for="user_email-611">e-mail</label>
+            <div class="um-clear"></div>
+        </div>
+
+        <div class="um-field-area">
+            <input autocomplete="off" class="um-form-field valid " type="text" name="user_email-611" id="user_email-611"
+               value="" placeholder="" data-validate="unique_email" data-key="user_email">
+        </div>
+    </div>
+
+<!--        тута пароль-->
+        <div id="um_field_611_user_password"
+             class="um-field um-field-password  um-field-user_password um-field-password um-field-type_password"
+             data-key="user_password">
+            <div class="um-field-label">
+                <div>
+                    <i aria-label="Пароль"></i>
+                </div>
+                <label for="user_password-611">Пароль</label>
+                <div class="um-clear"></div>
+            </div>
+            <div class="um-field-area">
+                <input class="um-form-field valid " type="password" name="user_password-611" id="user_password-611"
+                       value="" placeholder="" data-validate="" data-key="user_password">
+            </div>
+        </div>
+
+<!--        еще пароль-->
+        <div id="um_field_611_confirm_user_password"
+             class="um-field um-field-password  um-field-user_password um-field-password um-field-type_password"
+             data-key="confirm_user_password">
+            <div class="um-field-label">
+                <div>
+                    <i aria-label="Тоже пароль, но еще раз"></i>
+                </div>
+                <label for="confirm_user_password-611">Тоже пароль, но еще раз</label>
+                <div class="um-clear"></div>
+            </div>
+            <div class="um-field-area">
+                <input class="um-form-field valid " type="password" name="confirm_user_password-611"
+                       id="confirm_user_password-611" value="" placeholder="" data-validate=""
+                       data-key="confirm_user_password">
+            </div>
+        </div>
+
+<!--    Дальше кнопочки-->
+    <div class="um-col-alt">
+        <div class="um-right um-half">
+            <input type="submit" value="Зарегистрироваться" class="um-button" >
+        </div>
+        <div class="um-left um-half">
+            <a href="login" class="um-button um-alt">
+                Уже есть аккаунт
+            </a>
+        </div>
+        <div class="um-clear"></div>
+    </div>
+
+    <style>
+        .um-sizeregister.um {
+            max-width: 420px;
+        }
+        .um-form-field {
+            width: 399px;
+        }
+    </style>
+</div>
+{% endblock %}
