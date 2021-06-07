@@ -1,4 +1,4 @@
-:white_check_mark: Это уже сделано 
+:white_check_mark: Это уже сделано;
 :white_check_mark:Внешний вид сайта
 :white_check_mark:Авторизация
 :white_check_mark:Регистрация
